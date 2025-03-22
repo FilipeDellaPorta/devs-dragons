@@ -1,14 +1,17 @@
 import { Personagem } from './modules/personagem.js';
 
-const personagemNovo = new Personagem();
-personagemNovo.nome = 'Filipe';
-personagemNovo.mana = 12;
-personagemNovo.vida = 10;
-personagemNovo.level = 7;
-personagemNovo.tipo = 'Mago';
-personagemNovo.descricao = 'O mago supremo em termos de mana e vida.';
+const personagemNovo = new Personagem(
+  'Filipe',
+  12,
+  10,
+  7,
+  'Mago',
+  'O mago supremo em termos de mana e vida.'
+);
 
 personagemNovo.obterInsignia();
+
+console.log(personagemNovo);
 
 console.log(
   `Insígnia de ${personagemNovo.nome}: ${personagemNovo.obterInsignia()}`
