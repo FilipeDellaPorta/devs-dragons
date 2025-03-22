@@ -1,8 +1,8 @@
 import { Personagem } from './personagem.js';
 
 export class Arqueiro extends Personagem {
-  range;
   tipo = 'Arqueiro';
+  range;
 
   constructor(nome, level, descricao, range) {
     super(nome, level, descricao), (this.range = range);
