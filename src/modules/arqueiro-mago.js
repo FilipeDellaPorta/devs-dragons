@@ -3,7 +3,7 @@ import { Mago } from './mago.js';
 import { Personagem } from './personagem.js';
 
 export class ArqueiroMago extends Personagem {
-  tipo = 'ArqueiroMago';
+  static tipo = 'ArqueiroMago';
   ladoArqueiro;
   ladoMago;
 

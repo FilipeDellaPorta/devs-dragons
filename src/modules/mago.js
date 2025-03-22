@@ -1,7 +1,7 @@
 import { Personagem } from './personagem.js';
 
 export class Mago extends Personagem {
-  tipo = 'Mago';
+  static tipo = 'Mago';
   elementoMagico;
   levelMagico;
   inteligencia;
