@@ -2,19 +2,13 @@ import { Personagem } from './personagem.js';
 
 export class Mago extends Personagem {
   static tipo = 'Mago';
+  static descricao = 'O mago é implacável!';
   elementoMagico;
   levelMagico;
   inteligencia;
 
-  constructor(
-    nome,
-    level,
-    descricao,
-    elementoMagico,
-    levelMagico,
-    inteligencia
-  ) {
-    super(nome, level, descricao),
+  constructor(nome, level, elementoMagico, levelMagico, inteligencia) {
+    super(nome, level),
       (this.elementoMagico = elementoMagico),
       (this.levelMagico = levelMagico);
     this.inteligencia = inteligencia;

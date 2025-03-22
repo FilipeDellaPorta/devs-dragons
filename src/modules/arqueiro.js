@@ -2,10 +2,11 @@ import { Personagem } from './personagem.js';
 
 export class Arqueiro extends Personagem {
   static tipo = 'Arqueiro';
+  static descricao = 'Você tem o meu arco!';
   range;
 
-  constructor(nome, level, descricao, range) {
-    super(nome, level, descricao), (this.range = range);
+  constructor(nome, level, range) {
+    super(nome, level), (this.range = range);
   }
 
   obterInsignia() {

@@ -41,7 +41,7 @@ export class PersonagemView {
                 <h3 class="nome">${personagem.nome}</h3>
             </div>
             <div class="container-descricao">
-                <p class="descricao">${personagem.descricao}</p>
+                <p class="descricao">${personagem.constructor.descricao}</p>
             </div>
         </div>
         <div class="container-inferior">
