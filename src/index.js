@@ -8,4 +8,8 @@ personagemNovo.level = 7;
 personagemNovo.tipo = 'Mago';
 personagemNovo.descricao = 'O mago supremo em termos de mana e vida.';
 
-console.log(personagemNovo);
+personagemNovo.obterInsignia();
+
+console.log(
+  `Insígnia de ${personagemNovo.nome}: ${personagemNovo.obterInsignia()}`
+);
