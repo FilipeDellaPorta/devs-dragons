@@ -1,4 +1,5 @@
 import { Personagem } from './modules/personagem.js';
+import { Mago } from './modules/mago.js';
 import { PersonagemView } from './components/personagem-view.js';
 
 const personagemNovo = new Personagem(
