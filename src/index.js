@@ -3,20 +3,16 @@ import { PersonagemView } from './components/personagem-view.js';
 
 const personagemNovo = new Personagem(
   'Filipe',
-  12,
-  10,
-  7,
+  5,
   'Mago',
-  'O mago supremo em termos de mana e vida.'
+  'O mago supremo em termos de magia.'
 );
 
 const personagemDois = new Personagem(
-  'Mana',
-  15,
-  7,
-  6,
-  'Mago',
-  'A aprendiz do mago supremo.'
+  'Flecha',
+  3,
+  'Arqueiro',
+  'A aprendiz do mago supremo. Ela busca criar flechas mágicas.'
 );
 
 const personagens = [personagemNovo, personagemDois];
