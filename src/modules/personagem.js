@@ -4,8 +4,12 @@ export class Personagem {
   mana = 100;
   #level;
 
-  constructor(nome, level) {
-    (this.nome = nome), (this.#level = level);
+  constructor(nome) {
+    (this.nome = nome), (this.#level = 1);
+  }
+
+  get level() {
+    return this.#level;
   }
 
   obterInsignia() {

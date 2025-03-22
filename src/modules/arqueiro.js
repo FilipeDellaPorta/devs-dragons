@@ -5,8 +5,8 @@ export class Arqueiro extends Personagem {
   static descricao = 'Você tem o meu arco!';
   range;
 
-  constructor(nome, level, range) {
-    super(nome, level), (this.range = range);
+  constructor(nome, range) {
+    super(nome), (this.range = range);
   }
 
   obterInsignia() {
