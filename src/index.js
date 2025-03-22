@@ -7,14 +7,15 @@ const personagemNovo = new Mago(
   7,
   'O mago supremo em termos de magia.',
   'Sombras',
-  7
+  7,
+  6
 );
 
 const personagemDois = new Arqueiro(
   'Flecha',
   4,
   'A aprendiz do mago supremo. Ela busca criar flechas mágicas.',
-  100
+  6
 );
 
 const personagens = [personagemNovo, personagemDois];

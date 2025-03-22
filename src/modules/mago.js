@@ -3,16 +3,18 @@ import { Personagem } from './personagem.js';
 export class Mago extends Personagem {
   elementoMagico;
   levelMagico;
+  inteligencia;
   tipo = 'Mago';
 
-  constructor(nome, level, descricao, elementoMagico, levelMagico) {
+  constructor(nome, level, descricao, elementoMagico, levelMagico, inteligencia) {
     super(nome, level, descricao),
       (this.elementoMagico = elementoMagico),
-      (this.levelMagico = levelMagico);
+      (this.levelMagico = levelMagico)
+      this.inteligencia = inteligencia;
   }
 
   obterInsignia() {
-    if (this.levelMagico >= 5) {
+    if (this.levelMagico >= 5 && this.inteligencia >= 5) {
       return `Mestre da Magia de ${this.elementoMagico}`;
     }
     return super.obterInsignia();
