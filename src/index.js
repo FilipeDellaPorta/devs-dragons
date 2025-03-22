@@ -1,4 +1,5 @@
 import { Personagem } from './modules/personagem.js';
+import { PersonagemView } from './components/personagem-view.js';
 
 const personagemNovo = new Personagem(
   'Filipe',
@@ -9,10 +10,15 @@ const personagemNovo = new Personagem(
   'O mago supremo em termos de mana e vida.'
 );
 
-personagemNovo.obterInsignia();
-
-console.log(personagemNovo);
-
-console.log(
-  `Insígnia de ${personagemNovo.nome}: ${personagemNovo.obterInsignia()}`
+const personagemDois = new Personagem(
+  'Mana',
+  15,
+  7,
+  6,
+  'Mago',
+  'A aprendiz do mago supremo.'
 );
+
+const personagens = [personagemNovo, personagemDois];
+
+new PersonagemView(personagens).render();
