@@ -1,19 +1,19 @@
-import { Personagem } from './modules/personagem.js';
-import { Mago } from './modules/mago.js';
 import { PersonagemView } from './components/personagem-view.js';
+import { Mago } from './modules/mago.js';
+import { Arqueiro } from './modules/arqueiro.js';
 
-const personagemNovo = new Personagem(
+const personagemNovo = new Mago(
   'Filipe',
-  5,
-  'Mago',
-  'O mago supremo em termos de magia.'
+  7,
+  'O mago supremo em termos de magia.',
+  'Sombras'
 );
 
-const personagemDois = new Personagem(
+const personagemDois = new Arqueiro(
   'Flecha',
-  3,
-  'Arqueiro',
-  'A aprendiz do mago supremo. Ela busca criar flechas mágicas.'
+  4,
+  'A aprendiz do mago supremo. Ela busca criar flechas mágicas.',
+  100
 );
 
 const personagens = [personagemNovo, personagemDois];
