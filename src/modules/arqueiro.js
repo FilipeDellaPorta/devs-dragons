@@ -6,7 +6,8 @@ export class Arqueiro extends Personagem {
   range;
 
   constructor(nome, range) {
-    super(nome), (this.range = range);
+    super(nome);
+    this.range = range;
   }
 
   obterInsignia() {

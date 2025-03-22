@@ -8,9 +8,9 @@ export class Mago extends Personagem {
   inteligencia;
 
   constructor(nome, elementoMagico, levelMagico, inteligencia) {
-    super(nome),
-      (this.elementoMagico = elementoMagico),
-      (this.levelMagico = levelMagico);
+    super(nome);
+    this.elementoMagico = elementoMagico;
+    this.levelMagico = levelMagico;
     this.inteligencia = inteligencia;
   }
 
