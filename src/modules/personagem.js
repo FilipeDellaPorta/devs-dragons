@@ -15,7 +15,7 @@ export class Personagem {
     return `${this.constructor.tipo} iniciante`;
   }
 
-  static duelar(personagem1, personagem2) {
+  static verificarVencedor(personagem1, personagem2) {
     if (personagem1.level === personagem2.level) {
       return `Empate.`;
     }

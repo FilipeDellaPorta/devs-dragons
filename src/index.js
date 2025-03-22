@@ -14,4 +14,4 @@ const personagens = [personagemNovo, personagemDois, arqueiroMago];
 
 new PersonagemView(personagens).render();
 
-console.log(Personagem.duelar(personagemNovo, personagemDois));
+console.log(Personagem.verificarVencedor(personagemNovo, personagemDois));
